@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Desarrollo Web y Videojuegos de AlejoDev. JavaScript, CSS3 y HTML5.">
+    <title>Alejo Dev | Creative Developer</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Alejo<span>.Code</span></a>
+            
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#trayectoria">Trayectoria</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact" class="btn-nav">Contacto</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="container hero-container">
+            <div class="hero-text fade-in">
+                <span class="status-badge"><span class="dot"></span> Disponible para proyectos</span>
+                <h1>Diseño el futuro <br> con <span class="gradient-text">código limpio.</span></h1>
+                <p>Especialista en transformar conceptos abstractos en experiencias digitales interactivas. Enfoque en rendimiento, accesibilidad y animaciones fluidas.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn btn-primary">Ver Proyectos <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline">Hablemos</a>
+                </div>
+                
+                <div class="tech-stack-mini">
+                    <span>Stack Principal:</span>
+                    <div class="icons">
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual fade-in delay-1">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot-w red"></span>
+                        <span class="dot-w yellow"></span>
+                        <span class="dot-w green"></span>
+                    </div>
+                    <div class="window-body">
+                        <div class="line code-1"></div>
+                        <div class="line code-2"></div>
+                        <div class="line code-3"></div>
+                        <div class="floating-badge">100% Quality</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="trayectoria" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Mi Trayectoria</h2>
+                <p>El camino de aprendizaje continuo.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item left reveal">
+                    <div class="content">
+                        <h3>Senior Game Dev</h3>
+                        <span class="date">2024 - Presente</span>
+                        <p>Liderando el desarrollo de mecánicas complejas y optimización de renderizado en proyectos independientes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right reveal">
+                    <div class="content">
+                        <h3>Full Stack Developer</h3>
+                        <span class="date">2022 - 2023</span>
+                        <p>Desarrollo de aplicaciones web responsivas utilizando tecnologías modernas y metodologías ágiles.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left reveal">
+                    <div class="content">
+                        <h3>Inicio en Programación</h3>
+                        <span class="date">2021</span>
+                        <p>Comienzo autodidacta profundizando en lógica de algoritmos, estructuras de datos y POO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Proyectos Destacados</h2>
+                <p>Cada proyecto es una solución a un problema específico.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <article class="project-card reveal" 
+                    data-title="Ahorcado Pro" 
+                    data-desc="Una reimaginación del clásico juego. El desafío técnico fue manejar el estado del juego (vidas, letras usadas) sin recargar la página, utilizando manipulación avanzada del DOM."
+                    data-tech="JavaScript Vanilla, CSS Animations, LocalStorage"
+                    data-img="https://via.placeholder.com/800x500/2563eb/ffffff?text=UI+Ahorcado"
+                    data-link="./juegos/ahorcado.zip">
+                    
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/600x400/2563eb/ffffff?text=Ahorcado" alt="Ahorcado">
+                        <div class="overlay-hover">
+                            <button class="btn-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ahorcado Pro</h3>
+                        <p>Lógica de Strings & DOM</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-1"
+                    data-title="Bingo System"
+                    data-desc="Sistema complejo de generación de números aleatorios no repetitivos. Incluye un algoritmo para generar cartones válidos y una interfaz de 'Cantar Bolillas' automática."
+                    data-tech="Algoritmos JS, CSS Grid Layout, Audio API"
+                    data-img="https://via.placeholder.com/800x500/db2777/ffffff?text=UI+Bingo"
+                    data-link="#">
+                    
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/600x400/db2777/ffffff?text=Bingo" alt="Bingo">
+                        <div class="overlay-hover">
+                            <button class="btn-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Bingo System</h3>
+                        <p>Algoritmos & Probabilidad</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal delay-2"
+                    data-title="Memotest Brain"
+                    data-desc="Juego de memoria optimizado. Utiliza 'Array Shuffling' (Algoritmo Fisher-Yates) para mezclar las cartas eficientemente en cada nueva partida."
+                    data-tech="Logic, CSS 3D Transforms, Event Loop"
+                    data-img="https://via.placeholder.com/800x500/16a34a/ffffff?text=UI+Memotest"
+                    data-link="#">
+                    
+                    <div class="card-img">
+                        <img src="https://via.placeholder.com/600x400/16a34a/ffffff?text=Memotest" alt="Memotest">
+                        <div class="overlay-hover">
+                            <button class="btn-view">Ver Detalles</button>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Memotest Brain</h3>
+                        <p>Memoria & Lógica</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal">
+                <h2>Trabajemos juntos</h2>
+                <p>Estoy buscando nuevas oportunidades para contribuir con mi código. Si tienes un proyecto en mente, hablemos.</p>
+                <ul class="contact-list">
+                    <li><i class="fas fa-envelope"></i> hola@alejodev.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                </ul>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder=" ">
+                    <label for="name">Nombre</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+                <p class="success-msg" id="successMsg">¡Mensaje enviado con éxito!</p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> AlejoDev. Todos los derechos reservados.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" id="modalImg" alt="Project Detail" class="modal-banner">
+            <div class="modal-body">
+                <h2 id="modalTitle">Titulo del Proyecto</h2>
+                <p class="tech-badges" id="modalTech">
+                    </p>
+                <div class="modal-desc">
+                    <h4>Sobre el proyecto</h4>
+                    <p id="modalDesc">Descripción...</p>
+                </div>
+                <div class="modal-actions">
+                    <a href="#" id="modalLink" class="btn btn-primary" download>Descargar / Visitar</a>
+                    <button class="btn btn-outline close-btn-action">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
