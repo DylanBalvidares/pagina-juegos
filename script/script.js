@@ -4,10 +4,10 @@ var desc = document.getElementById('descModal');
 var link = document.getElementById('linkDescarga');
 var img = document.getElementById('imgModal');
 
-function abrirModal(nombreJuego, descripcion, rutaJar, rutaImagen) {
+function abrirModal(nombreJuego, descripcion, rutaJuego, rutaImagen) {
     titulo.innerText = nombreJuego;
     desc.innerText = descripcion;
-    link.href = rutaJar;
+    link.href = rutaJuego;
 
     if (rutaImagen) {
         img.src = rutaImagen;
