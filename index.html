@@ -13,7 +13,7 @@
 
     <div class="menu-simple">
         <div class="limite-ancho">
-            <span>Alejo.java</span>
+            <span>Alguien.java</span>
             <div class="enlaces">
                 <a href="#inicio">Inicio</a>
                 <a href="#lista">Juegos</a>
@@ -24,37 +24,37 @@
 
     <div id="inicio" class="zona-arriba">
         <div class="limite-ancho">
-            <h1 class="titulo">Mis Proyectos en Java</h1>
+            <h1 class="titulo">Mis Juegos en Java</h1>
             <p class="texto-simple">
-                > Hola. Soy programador.<br>
-                > Aquí subo mis prácticas y juegos hechos con Swing y lógica pura.<br>
-                > Sin frameworks raros, solo <code>public static void main</code>.
+                > Hola. Soy alguien.<br>
+                > Esta es mi colección personal de juegos clásicos y pasatiempos.<br>
+                > Simples, directos y listos para jugar.
             </p>
             <br>
             <div class="caja-codigo">
-                System.out.println("Bienvenido a mi repo");
+                System.out.println("¡A jugar!");
             </div>
         </div>
     </div>
 
     <div id="lista" class="zona-juegos">
         <div class="limite-ancho">
-            <h2 class="subtitulo">Listado de .JARs</h2>
+            <h2 class="subtitulo">Biblioteca de Juegos</h2>
             <hr>
 
             <div class="caja-juego">
                 <div class="lado-img">
-                    <div class="cuadro-gris"><i class="fas fa-gamepad"></i></div>
+                    <div class="cuadro-gris"><i class="fas fa-font"></i></div>
                 </div>
                 <div class="lado-texto">
-                    <h3>Ahorcado v1.0</h3>
-                    <p>El clásico juego de adivinar palabras. Lee un .txt con palabras y tienes 6 intentos. Hecho con
-                        Java Swing.</p>
-                    <p class="detalles"><b>Clases usadas:</b> String, Graphics, FileReadeer.</p>
+                    <h3>Ahorcado Clásico</h3>
+                    <p>El tradicional juego de palabras. Intenta descubrir el término oculto letra por letra antes de
+                        que se complete el dibujo y pierdas tus vidas.</p>
+                    <p class="detalles"><b>Tipo:</b> Puzzle / Palabras</p>
 
                     <div class="botones">
                         <button class="boton-accion"
-                            onclick="abrirModal('Ahorcado', 'Juego de consola pasado a interfaz gráfica. Usa eventos de teclado KeyListener.', './juegos/ahorcado.zip')">
+                            onclick="abrirModal('Ahorcado Clásico', 'Una versión digital del clásico de lápiz y papel. Cuenta con una gran variedad de palabras para adivinar y un sistema de vidas.', './juegos/ahorcado.zip', 'https://placehold.co/600x300/1a1a1a/00ff00?text=IMG+Ahorcado')">
                             Ver Info
                         </button>
                     </div>
@@ -66,14 +66,14 @@
                     <div class="cuadro-gris"><i class="fas fa-th"></i></div>
                 </div>
                 <div class="lado-texto">
-                    <h3>Bingo Generator</h3>
-                    <p>Genera cartones de bingo que no se repiten usando matrices y Math.random(). También canta los
-                        números.</p>
-                    <p class="detalles"><b>Clases usadas:</b> Arrays, Random, AudioSystem.</p>
+                    <h3>Bingo Automático</h3>
+                    <p>Un simulador de Bingo completo. Genera cartones únicos para jugar y cuenta con un sistema que
+                        "canta" los números al azar.</p>
+                    <p class="detalles"><b>Tipo:</b> Azar / Simulación</p>
 
                     <div class="botones">
                         <button class="boton-accion"
-                            onclick="abrirModal('Bingo', 'Algoritmo para evitar duplicados en matrices 5x5. Incluye sonidos wav simples.', './juegos/bingo.jar')">
+                            onclick="abrirModal('Bingo Automático', 'Perfecto para pasar el rato. El juego se encarga de sacar las bolillas y verificar los cartones automáticamente.', './juegos/bingo.zip', 'https://placehold.co/600x300/1a1a1a/00ff00?text=IMG+Bingo')">
                             Ver Info
                         </button>
                     </div>
@@ -86,13 +86,51 @@
                 </div>
                 <div class="lado-texto">
                     <h3>Memotest</h3>
-                    <p>Encuentra los pares. Usa Timers para voltear las cartas si te equivocas. Lógica de estados
-                        simple.</p>
-                    <p class="detalles"><b>Clases usadas:</b> Timer, JButton, ArrayList.</p>
+                    <p>Pon a prueba tu memoria visual. Encuentra todas las parejas de cartas iguales en el tablero antes
+                        de que se acabe el tiempo.</p>
+                    <p class="detalles"><b>Tipo:</b> Memoria / Agilidad</p>
 
                     <div class="botones">
                         <button class="boton-accion"
-                            onclick="abrirModal('Memotest', 'Uso de ArrayList para mezclar (shuffle) las cartas antes de empezar.', './juegos/memotest.jar')">
+                            onclick="abrirModal('Memotest', 'Entrena tu cerebro recordando la posición de las figuras. Las cartas se mezclan en cada nueva partida.', './juegos/memotest.zip', 'https://placehold.co/600x300/1a1a1a/00ff00?text=IMG+Memotest')">
+                            Ver Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja-juego">
+                <div class="lado-img">
+                    <div class="cuadro-gris"><i class="fas fa-chess-board"></i></div>
+                </div>
+
+                <div class="lado-texto">
+                    <h3>Juego de la Oca</h3>
+                    <p>El famoso juego de tablero. Tira los dados y avanza casilleros hasta la meta. Cuidado con caer en
+                        las trampas que te hacen retroceder.</p>
+                    <p class="detalles"><b>Tipo:</b> Tablero / Clásico</p>
+                    <div class="botones">
+                        <button class="boton-accion"
+                            onclick="abrirModal('Juego de la Oca', 'Compite por llegar al final del recorrido. Un juego de pura suerte y diversión rápida.', './juegos/juego-oca1.zip', 'https://placehold.co/600x300/1a1a1a/00ff00?text=IMG+Oca+v1')">
+                            Ver Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja-juego">
+                <div class="lado-img">
+                    <div class="cuadro-gris"><i class="fas fa-chess-board"></i></div>
+                </div>
+
+                <div class="lado-texto">
+                    <h3>La Gran Oca (V2)</h3>
+                    <p>Una versión mejorada del juego de tablero. Incluye nuevas reglas, un recorrido más largo y nuevos
+                        desafíos en los casilleros.</p>
+                    <p class="detalles"><b>Tipo:</b> Tablero / Estrategia</p>
+                    <div class="botones">
+                        <button class="boton-accion"
+                            onclick="abrirModal('La Gran Oca V2', 'La secuela del juego original con gráficos renovados y mecánicas de juego ajustadas para más diversión.', './juegos/juego-oca.zip', 'https://placehold.co/600x300/1a1a1a/00ff00?text=IMG+Oca+v2')">
                             Ver Info
                         </button>
                     </div>
@@ -102,11 +140,21 @@
         </div>
     </div>
 
+    <div class="caja-colaboracion" style="background: #222; border: 1px dashed #00ff00; padding: 20px; margin-top: 40px;">
+        <h3 style="color: #00ff00;">> ¿Tienes buenas ideas?</h3>
+        <p style="color: #ccc; font-family: monospace;">
+            Siempre estoy buscando formas de mejorar estos proyectos.<br><br>
+            Si se te ocurre cómo hacer estos juegos más divertidos, encontraste algún error, o te gustaría proponer una
+            idea para un juego nuevo, me encantaría escucharte.
+            <br><br>
+            Estoy abierto a cualquier sugerencia o colaboración.
+        </p>
+    </div>
+
     <div id="contacto" class="zona-abajo">
         <div class="limite-ancho">
             <h3>Contacto</h3>
-            <p>Mándame un correo si quieres el código fuente.</p>
-            <p>> alejo@java.dev</p>
+            <p>> alguien@java.dev</p>
         </div>
     </div>
 
@@ -114,10 +162,15 @@
         <div class="caja-modal">
             <h2 id="tituloModal">Titulo</h2>
             <hr>
+            
+            <img id="imgModal" src="" alt="Imagen del juego" class="imagen-modal">
+
             <p id="descModal">Descripcion aqui...</p>
             <br>
-            <a href="#" id="linkDescarga" class="boton-descarga">Descargar .JAR</a>
-            <button class="boton-cerrar" onclick="cerrarModal()">Cerrar</button>
+            <div class="botones-modal">
+                <a href="#" id="linkDescarga" class="boton-descarga">Descargar Juego</a>
+                <button class="boton-cerrar" onclick="cerrarModal()">Cerrar</button>
+            </div>
         </div>
     </div>
 
